@@ -1,0 +1,1 @@
+import 'package:google_generative_ai/google_generative_ai.dart'; void main() async { try { final m = GenerativeModel(model: 'gemini-1.5-flash', apiKey: 'YOUR_API_KEY_HERE'); final r = await m.generateContent([Content.text('Test')]); print(r.text); } catch (e) { print(e.toString()); } }
